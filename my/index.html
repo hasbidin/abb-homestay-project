@@ -56,6 +56,14 @@
         }
         window.onload = openPopup;
     </script>
+
+    <script>
+        // Detect all clicks on the document
+        document.addEventListener("click", function(event) {
+        // If user clicks outside the element, hide it!
+        popup.classList.remove("open-popup");
+        })
+    </script>
 </head>
 <body>
 <!-- ======Top Menu Start====== -->
@@ -68,10 +76,7 @@
                 <button type="button" onclick="closePopup()">No</button>
             </div>
             <script>
-                let popup = document.getElementById("popup");            
-                function openPopup(){
-                    popup.classList.add("open-popup");
-                }            
+                let popup = document.getElementById("popup");           
                 function closePopup(){
                     popup.classList.remove("open-popup");                
                 }            
