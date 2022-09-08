@@ -5122,3 +5122,33 @@ textarea.form-control:focus {
 }
 
 /*  Homepage calendar end  */
+.popup{
+    width: 400px;
+    background: #fff;
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 40px 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    border: 2px solid #191B18;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+.popup button{
+    width: 30%;
+    padding: 5px 5px;
+    outline: none;
+    font-size: 18px;
+    background: #fff;
+    color: #074365;
+    border-color: #074365;
+    border: 2px solid #191B18;
+    display: inline-block
+}

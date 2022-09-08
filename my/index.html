@@ -50,12 +50,36 @@
     <!-- gallery fancybox -->
     <link rel="stylesheet" href="../assets/plugin/fancybox/css/fancybox.css">
 
+    <script type="text/javascript">
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+        window.onload = openPopup;
+    </script>
 </head>
 <body>
 <!-- ======Top Menu Start====== -->
 <div class="thmv-top-nav">
     <header id="navbar_top" class="thmv-navbar-light">
         <div class="container">
+            <div class="popup" id="popup">
+                <p>Do you want to view this page in English?</p>
+                <button type="button" onclick="closePopupAndOpenEN()">Yes</button>
+                <button type="button" onclick="closePopup()">No</button>
+            </div>
+            <script>
+                let popup = document.getElementById("popup");            
+                function openPopup(){
+                    popup.classList.add("open-popup");
+                }            
+                function closePopup(){
+                    popup.classList.remove("open-popup");                
+                }            
+                function closePopupAndOpenEN(){
+                    popup.classList.remove("open-popup");
+                    window.open("../en/index.html","_self")
+                }
+            </script>
             <div class="row">
                 <div class="col-md-12">
                     <nav id="cssmenu" class="thmv-top-navbar">
