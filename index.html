@@ -70,6 +70,16 @@
             instrumentationKey: "e06a254c-0a30-420c-96a4-154c31a367e8"
             /* ...Other Configuration Options... */
         }});
+
+        import { ApplicationInsights } from '@microsoft/applicationinsights-web'
+
+        const appInsights = new ApplicationInsights({ config: {
+            connectionString: "InstrumentationKey=e06a254c-0a30-420c-96a4-154c31a367e8;IngestionEndpoint=https://eastasia-0.in.applicationinsights.azure.com/;LiveEndpoint=https://eastasia.livediagnostics.monitor.azure.com/",
+            instrumentationKey: "e06a254c-0a30-420c-96a4-154c31a367e8"
+            /* ...Other Configuration Options... */
+        } });
+        appInsights.loadAppInsights();
+        appInsights.trackPageView(null, null, {urlReferrer: document.referrer});
     </script>
 </head>
 <body>
