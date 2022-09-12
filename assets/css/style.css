@@ -5169,14 +5169,12 @@ textarea.form-control:focus {
 
 }
 .banner-content { 
-    width: 1200px; 
+    width: 500px; 
     margin: 0 auto; 
     padding: 10px; 
     
 }
 .open-banner {
     visibility: visible;
-
 }
-
 /*  Temporary banner end  */
