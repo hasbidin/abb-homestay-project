@@ -5122,6 +5122,8 @@ textarea.form-control:focus {
 }
 
 /*  Homepage calendar end  */
+
+/*  Switch to English popup start  */
 .popup{
     width: 400px;
     background: #fff;
@@ -5152,3 +5154,29 @@ textarea.form-control:focus {
     border: 2px solid #191B18;
     display: inline-block
 }
+
+/*  Switch to English popup end  */
+
+/*  Temporary banner start  */
+
+.banner { 
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    background-color: #DDEEEE; 
+    width: 100%;
+    visibility: hidden; 
+
+}
+.banner-content { 
+    width: 1200px; 
+    margin: 0 auto; 
+    padding: 10px; 
+    
+}
+.open-banner {
+    visibility: visible;
+
+}
+
+/*  Temporary banner end  */
