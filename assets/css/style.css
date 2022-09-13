@@ -5156,25 +5156,3 @@ textarea.form-control:focus {
 }
 
 /*  Switch to English popup end  */
-
-/*  Temporary banner start  */
-
-.banner { 
-    position: fixed; 
-    bottom: 0; 
-    left: 0; 
-    background-color: #DDEEEE; 
-    width: 100%;
-    visibility: hidden; 
-
-}
-.banner-content { 
-    width: 500px; 
-    margin: 0 auto; 
-    padding: 10px; 
-    
-}
-.open-banner {
-    visibility: visible;
-}
-/*  Temporary banner end  */
